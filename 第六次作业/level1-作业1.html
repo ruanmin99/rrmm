@@ -1,0 +1,67 @@
+2<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+    #bigcontainer{
+    font-size: 30px;
+    font-family: 黑体;
+    height:675px;
+    background-color: aqua;
+    }
+    .container1{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 100px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="bigcontainer">
+            <div class="container1">
+                <h2>好听歌</h2><br/>
+                <ul>
+                    <li>Troye Sivan-《blue》</li>
+                    <li>Charlie Puth-《attentioin》</li>
+                    <li>Justin Bieber-《as long as you love me》</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="blue">蓝色</button>
+        <button id="purple">紫色</button>
+        <button id="te">小号字体</button>
+        <button id="tw">中号字体</button>
+        <button id="th">大号字体</button>
+    </div>
+    <script type="text/javascript">
+            var bigcontainer=document.getElementById("bigcontainer");
+            var blue=document.getElementById("blue");
+            blue.onclick=function(){
+                bigcontainer.style.backgroundColor="blue";
+            }
+            var purple=document.getElementById('purple');
+            purple.onclick=function(){
+                bigcontainer.style.backgroundColor="purple";
+            }
+            var te=document.getElementById("te")
+            te.onclick=function(){
+                bigcontainer.style.fontSize="15px";
+            }
+            var tw=document.getElementById("tw")
+            tw.onclick=function(){
+                bigcontainer.style.fontSize="25px";
+            }
+            var th=document.getElementById("th")
+            th.onclick=function(){
+                bigcontainer.style.fontSize="38px";
+            }
+    </script>
+</body>
+</html>

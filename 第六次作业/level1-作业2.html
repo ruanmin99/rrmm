@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    #color-list{
+        font-family:黑体 ;
+        font-size: 30px;
+    }
+    #texthtml{
+        background-color: aquamarine;
+        height:35px;
+    }
+</style>
+<body>
+    <div>
+        <ul id="color-list">
+            <li>天秤座</li>
+            <li>水瓶座</li>
+            <li>狮子座</li>
+            <li>巨蟹座</li>
+            <li>摩羯座</li>
+            <li>处女座</li>
+            <li>天蝎座</li>
+            <li>双鱼座</li>
+            <li>白羊座</li>
+        </ul>
+    </div>
+    <div id="texthtml"></div>
+    <script type="text/javascript">
+        var li=document.getElementsByTagName('li');
+        for(var i=0;i<li.length;i++){
+            var texthtml=document.getElementById('texthtml');
+            li[i].onclick=function(){
+                texthtml.innerHTML = this.innerHTML;
+            };
+        }
+
+        window.onload=function color(){
+            var color_list=document.getElementById('color-list');
+            var colors=color_list.getElementsByTagName('li');
+            for(var i=0;i<colors.length;i++){
+                if(i%2==0){
+                    colors[i].style.color="green";
+                }else{
+                    colors[i].style.color="red";
+                }
+            };
+        }
+    </script>
+    </div>
+</body>
+</html>
